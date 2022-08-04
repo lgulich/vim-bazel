@@ -70,7 +70,6 @@ function! bazel#Run(arguments, ...) abort
   let l:executable = get(l:config, 'executable', 'bazel')
 
   if a:arguments[0] == "build"
-    call l:syscall.CallForeground(1, 0)
     set errorformat=ERROR:\ %f:%l:%c:%m
   ￼ set errorformat+=%f:%l:%c:%m
   ￼
